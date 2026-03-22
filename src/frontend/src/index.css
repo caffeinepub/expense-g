@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Page background: #EEF2F5 */
+    --background: 0.958 0.008 240;
+    /* Card/white: #FFFFFF */
+    --card: 1 0 0;
+    --card-foreground: 0.175 0.015 265;
+    --popover: 1 0 0;
+    --popover-foreground: 0.175 0.015 265;
+    /* Main text: #111827 */
+    --foreground: 0.175 0.015 265;
+    /* Primary CTA (teal): #2C8A87 */
+    --primary: 0.565 0.095 192;
+    --primary-foreground: 1 0 0;
+    /* Secondary */
+    --secondary: 0.93 0.01 240;
+    --secondary-foreground: 0.175 0.015 265;
+    /* Muted: #6B7785 */
+    --muted: 0.93 0.01 240;
+    --muted-foreground: 0.53 0.025 240;
+    /* Accent (blue): #2E6FB8 */
+    --accent: 0.485 0.13 248;
+    --accent-foreground: 1 0 0;
+    /* Destructive: #D9534F */
+    --destructive: 0.565 0.175 25;
+    --destructive-foreground: 1 0 0;
+    /* Border: #DDE3EA */
+    --border: 0.907 0.012 240;
+    --input: 0.907 0.012 240;
+    --ring: 0.565 0.095 192;
+
+    /* Chart colors */
+    --chart-1: 0.485 0.13 248;
+    --chart-2: 0.65 0.13 155;
+    --chart-3: 0.625 0.09 198;
+    --chart-4: 0.775 0.01 240;
+    --chart-5: 0.72 0.15 55;
+
+    /* Success */
+    --success: 0.535 0.12 152;
+    --success-bg: 0.945 0.05 160;
+    --success-foreground: 1 0 0;
+
+    /* Sidebar */
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.175 0.015 265;
+    --sidebar-primary: 0.565 0.095 192;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.93 0.01 240;
+    --sidebar-accent-foreground: 0.175 0.015 265;
+    --sidebar-border: 0.907 0.012 240;
+    --sidebar-ring: 0.565 0.095 192;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
